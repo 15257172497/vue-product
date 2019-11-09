@@ -1,8 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
+import './fw'
+import 'assets/style/reset.css'
+import router from 'router'
+import store from './store'
+import filter from './filters'
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+    router,
+    store,
+    render: h => h(App),
 }).$mount('#app')
